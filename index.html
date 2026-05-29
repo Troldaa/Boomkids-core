@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interní portál Boomkids Core pro tým, aktivity, finance a provozní dokumenty."
+    />
+    <title>Boomkids Core | Interní portál</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-panel" aria-labelledby="hero-title">
+        <nav class="topbar" aria-label="Hlavní navigace">
+          <a class="brand" href="#">
+            <span class="brand-mark">BK</span>
+            <span>Boomkids Core</span>
+          </a>
+          <a class="topbar-link" href="#login">Přihlášení</a>
+        </nav>
+
+        <div class="hero-content">
+          <p class="eyebrow">Interní týmový hub</p>
+          <h1 id="hero-title">Vše důležité pro Boomkids na jednom moderním místě.</h1>
+          <p class="hero-text">
+            Přehled kategorií, rychlý přístup k agendám a jednoduché přihlášení pro členy týmu.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#login">Přihlásit se</a>
+            <a class="button secondary" href="#categories">Zobrazit kategorie</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="login-panel" id="login" aria-labelledby="login-title">
+        <div class="login-card">
+          <div>
+            <p class="eyebrow">Bezpečný přístup</p>
+            <h2 id="login-title">Přihlášení</h2>
+            <p class="muted">Ukázkové rozhraní připravené pro napojení na reálnou autentizaci.</p>
+          </div>
+
+          <form class="login-form">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="tym@boomkids.cz" autocomplete="email" />
+
+            <label for="password">Heslo</label>
+            <input id="password" type="password" placeholder="••••••••" autocomplete="current-password" />
+
+            <div class="form-row">
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span>Zapamatovat přihlášení</span>
+              </label>
+              <a href="#">Zapomenuté heslo?</a>
+            </div>
+
+            <button type="button" class="button primary full-width">Vstoupit do portálu</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="dashboard" id="categories" aria-labelledby="categories-title">
+        <div class="section-heading">
+          <p class="eyebrow">Dashboard</p>
+          <h2 id="categories-title">Kategorie Boomkids Core</h2>
+          <p class="muted">Rychlé rozcestí pro nejpoužívanější interní oblasti.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card">
+            <span class="icon">📣</span>
+            <h3>Marketing</h3>
+            <p>Kampaně, sociální sítě, grafické podklady a plán komunikace.</p>
+          </article>
+
+          <article class="category-card">
+            <span class="icon">🏕️</span>
+            <h3>Příměstské tábory</h3>
+            <p>Turnusy, přihlášky, programy, kapacity a organizační checklisty.</p>
+          </article>
+
+          <article class="category-card">
+            <span class="icon">🤸</span>
+            <h3>Pohybové aktivity</h3>
+            <p>Kroužky, lekce, lektoři, docházka a metodické materiály.</p>
+          </article>
+
+          <article class="category-card">
+            <span class="icon">💳</span>
+            <h3>Finance</h3>
+            <p>Rozpočty, faktury, platby, přehled nákladů a výnosů.</p>
+          </article>
+
+          <article class="category-card featured">
+            <span class="icon">📘</span>
+            <h3>Teplobook Boomkids</h3>
+            <p>Interní manuály, postupy, know-how, pravidla a týmová dokumentace.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
